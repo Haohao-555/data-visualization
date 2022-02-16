@@ -70,11 +70,8 @@ export default {
         document.documentElement.clientWidth ||
         document.body.clientWidth;
       let cardWidth = cardList[0].clientWidth + 2 * distance;
-
       let num = (w / cardWidth).toFixed(1);
-
       let last = this.realNum % num;
-
       for (let j = last == 0 ? num : last; j < num; j++) {
         let card = document.createElement("div");
         card.className = "chart";
@@ -86,7 +83,6 @@ export default {
 </script>
 
 <style>
-
 .btn-active {
   border-color: #00428b !important;
   color: #00428b !important;
